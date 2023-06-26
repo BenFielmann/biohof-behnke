@@ -1,0 +1,41 @@
+:root {
+  --global-background-color: linear-gradient(
+    360deg,
+    #000 0%,
+    rgba(185, 159, 92, 0.79) 100%
+  );
+
+  --global-text-color: #cccccc;
+  --global-text-color-secondary: #ff922e;
+
+  --global-primary-font-family: red-hat-text-medium;
+  --global-secondary-font-family: ravi-prakash;
+  --global-secondary-font-family-one-glyph: yatra-one;
+  --global-font-size: 1rem;
+}
+
+@font-face {
+  font-family: red-hat-text-medium;
+  src: url(/font/RedHatText-Medium.ttf);
+}
+
+@font-face {
+  font-family: ravi-prakash;
+  src: url(/font/RaviPrakash-Regular.ttf);
+}
+
+@font-face {
+  font-family: yatra-one;
+  src: url(/font/RaviPrakash-Regular.ttf);
+}
+
+/* :root {
+    --global-font-family: Verdana, sans-serif;
+    --global-font-size: 0.8rem;
+    --global-text-color: #222;
+    --global-primary-title-size: 2rem;
+    --global-color-primary: #88498f;
+    --global-color-secondary: #779fa1;
+    --global-color-warning: #e28413;
+    --global-color-danger: #ff6542;
+} */
