@@ -14,6 +14,12 @@ body {
   font-family: var(--global-primary-font-family);
 }
 
+.top-page-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 header {
   background-image: url(/img/hero.jpg);
   background-size: 100%;
@@ -21,31 +27,77 @@ header {
   background-repeat: no-repeat;
 }
 
-.head_lines {
-  font-family: var(--global-secondary-font-family);
-}
-
-.text-colors {
-  color: var(--global-text-color-primary);
-}
-
 h1 {
   font-size: 4rem;
   line-height: 3.2rem;
   padding-top: 2rem;
   color: var(--global-text-color-secondary);
+  text-shadow: 4px 4px #000;
+}
+
+hr {
+  width: 12rem;
+  margin: auto;
+  border-color: #ff922e;
+  box-shadow: 2px 2px 0px 0px #000;
+  transform: rotate(-2deg);
+}
+
+h3 {
+  margin-top: 0.4rem;
+  color: var(--global-text-color-secondary);
+  font-size: 2rem;
+  
+}
+
+.disruptor_flex{
+  margin-top: 9rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.disruptor{
+  background-color: rgba(240, 248, 255, 0.266);
+  transform: rotate(-4deg);
+  border: solid 0.2rem;
+  border-radius: 0.4rem;
+  border-color: var(--global-disruptor-color);
+  width: 9rem;
+  height: 3rem;
+}
+.disruptor p{
+  color: var(--global-disruptor-color);
+  margin: 0.4rem 0 0 0;
+  font-size: 0.8rem;
+  line-height: 1rem;
   text-align: center;
 }
 
 h2 {
-  margin: 2rem 0 2rem 0;
-  text-align: center;
+  margin: 2rem 0 1.2rem 0;
   font-size: 2.8rem;
-  line-height: 1.8rem;
+  line-height: 3rem;
+  
+}
+.ü_h2{
+  font-size: 2.4rem;
+  font-family: var(--global-secondary-font-family-one-glyph);
 }
 
 p {
   font-size: 1.2rem;
   margin: 0 1.2rem 0 1.2rem;
   line-height: 1.8rem;
+}
+
+.text_shadow{
+  text-shadow: 2px 2px #000;
+}
+
+.primary_text_colors {
+  color: var(--global-text-color-primary);
+}
+.head_lines {
+  font-family: var(--global-secondary-font-family);
+  text-align: center;
 }
