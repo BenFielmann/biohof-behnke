@@ -21,10 +21,31 @@ header {
   background-repeat: no-repeat;
 }
 
-h1 {
-  padding: 1.4rem 0.6rem 0 0;
-  display: flex;
-  justify-content: center;
-  color: #ff922e;
+.head_lines {
   font-family: var(--global-secondary-font-family);
+}
+
+.text-colors {
+  color: var(--global-text-color-primary);
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 3.2rem;
+  padding-top: 2rem;
+  color: var(--global-text-color-secondary);
+  text-align: center;
+}
+
+h2 {
+  margin: 2rem 0 2rem 0;
+  text-align: center;
+  font-size: 2.8rem;
+  line-height: 1.8rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 0 1.2rem 0 1.2rem;
+  line-height: 1.8rem;
 }
