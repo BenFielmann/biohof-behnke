@@ -5,7 +5,7 @@
     rgba(185, 159, 92, 0.79) 100%
   );
 
-  --global-text-color: #cccccc;
+  --global-text-color-primary: #cccccc;
   --global-text-color-secondary: #ff922e;
 
   --global-primary-font-family: red-hat-text-medium;
