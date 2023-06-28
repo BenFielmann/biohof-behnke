@@ -12,12 +12,11 @@ body {
   height: 100vh;
   background-attachment: fixed;
   font-family: var(--global-primary-font-family);
+  font-size: var(--global-font-size);
 }
 
-.top-page-flex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.page_wrapper {
+  height: 100vh;
 }
 
 header {
@@ -25,6 +24,12 @@ header {
   background-size: 100%;
   height: 25rem;
   background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+.head_lines {
+  font-family: var(--global-secondary-font-family);
+  text-align: center;
 }
 
 h1 {
@@ -56,7 +61,7 @@ h3 {
 }
 
 .disruptor {
-  background-color: rgba(240, 248, 255, 0.266);
+  background-color: #d9d9d930;
   transform: rotate(-4deg);
   border: solid 0.2rem;
   border-radius: 0.4rem;
@@ -82,11 +87,19 @@ h2 {
   font-family: var(--global-secondary-font-family-one-glyph);
 }
 
+.text_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 p {
   font-size: 1.2rem;
   margin: 0 1.2rem 0 1.2rem;
   line-height: 1.8rem;
 }
+
+/* ______Helper-Classes______ */
 
 .text_shadow {
   text-shadow: 2px 2px #000;
@@ -94,8 +107,4 @@ p {
 
 .primary_text_colors {
   color: var(--global-text-color-primary);
-}
-.head_lines {
-  font-family: var(--global-secondary-font-family);
-  text-align: center;
 }
