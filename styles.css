@@ -7,10 +7,9 @@
 }
 
 body {
-  background: linear-gradient(360deg, #000 0%, rgba(185, 159, 92, 0.79) 100%);
+  background: var(--global-background-color);
   background-repeat: no-repeat;
-  height: 100vh;
-  background-attachment: fixed;
+  height: 100%;
   font-family: var(--global-primary-font-family);
   font-size: var(--global-font-size);
 }
