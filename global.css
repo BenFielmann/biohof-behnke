@@ -7,11 +7,11 @@
 
   --global-text-color-primary: #cccccc;
   --global-text-color-secondary: #ff922e;
-
+  --global-disruptor-color: #5ee122;
   --global-primary-font-family: red-hat-text-medium;
   --global-secondary-font-family: ravi-prakash;
   --global-secondary-font-family-one-glyph: yatra-one;
-  --global-font-size: 1rem;
+  --global-font-size: 1em;
 }
 
 @font-face {
@@ -26,7 +26,7 @@
 
 @font-face {
   font-family: yatra-one;
-  src: url(/font/RaviPrakash-Regular.ttf);
+  src: url(/font/YatraOne-Regular.ttf);
 }
 
 /* :root {
