@@ -14,10 +14,6 @@ body {
   font-size: var(--global-font-size);
 }
 
-.page_wrapper {
-  height: 100vh;
-}
-
 header {
   background-image: url(/img/hero.jpg);
   background-size: 100%;
