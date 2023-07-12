@@ -20,15 +20,26 @@ header {
   height: 25rem;
   background-repeat: no-repeat;
   overflow-x: hidden;
+  
 }
 
-.head_lines {
+.headlines {
   font-family: var(--global-secondary-font-family);
   text-align: center;
 }
 
+.headline_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.headline_text_shadow {
+  text-shadow: 2px 2px #000;
+}
+
 h1 {
-  font-size: 4rem;
+  font-size: clamp(1em, 17vw, 4em);
+  /* Erster Wert für kleinste Schriftgröße, zweiter für den viwport, dritter für maximale Schrift skaliert sich darauf */
   line-height: 3.2rem;
   padding-top: 2rem;
   color: var(--global-text-color-secondary);
@@ -36,7 +47,7 @@ h1 {
 }
 
 hr {
-  width: 12rem;
+  width: clamp(7em, 62vw, 15em);
   margin: auto;
   border-color: #ff922e;
   box-shadow: 2px 2px 0px 0px #000;
@@ -46,7 +57,8 @@ hr {
 h3 {
   margin-top: 0.4rem;
   color: var(--global-text-color-secondary);
-  font-size: 2rem;
+  font-size: clamp(0.5em, 13vw, 2em);
+  /* Erster Wert für kleinste Schriftgröße, zweiter für den viwport, dritter für maximale Schrift skaliert sich darauf */
 }
 
 .disruptor_flex {
@@ -56,13 +68,14 @@ h3 {
 }
 
 .disruptor {
-  background-color: #d9d9d930;
+  margin: 0 0.4rem 0 0;
+  background-color: #0000004c;
   transform: rotate(-4deg);
   border: solid 0.2rem;
   border-radius: 0.4rem;
   border-color: var(--global-disruptor-color);
   width: 9rem;
-  height: 3rem;
+  height: fit-content;
 }
 .disruptor p {
   color: var(--global-disruptor-color);
@@ -72,32 +85,77 @@ h3 {
   text-align: center;
 }
 
+.sec_disruptor_flex {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sec_disruptor {
+  margin: 0 0.4rem 0 0;
+  background-color: #0000004c;
+  transform: rotate(-4deg);
+  border: solid 0.2rem;
+  border-radius: 0.4rem;
+  border-color: var(--global-disruptor-color);
+  width: 14rem;
+  height: fit-content;
+}
+
+.sec_disruptor p {
+  color: var(--global-disruptor-color);
+  margin: 0.4rem 0 0 0;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  text-align: center;
+}
+
 h2 {
   margin: 2rem 0 1.2rem 0;
-  font-size: 2.8rem;
+  font-size: clamp(1em, 12vw, 2.8em);
+  /* Erster Wert für kleinste Schriftgröße, zweiter für den viwport, dritter für maximale Schrift skaliert sich darauf */
   line-height: 3rem;
 }
-.ü_h2 {
-  font-size: 2.4rem;
+
+.h2_ü {
+  font-size: clamp(0.2em, 12vw, 0.9em);
+  /* Erster Wert für kleinste Schriftgröße, zweiter für den viwport, dritter für maximale Schrift skaliert sich darauf */
   font-family: var(--global-secondary-font-family-one-glyph);
 }
 
-.text_flex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 p {
-  font-size: 1.2rem;
+  font-size: clamp(0.2em, 5vw, 1.2em);
   margin: 0 1.2rem 0 1.2rem;
   line-height: 1.8rem;
 }
 
-/* ______Helper-Classes______ */
+.city_shield_flex_box {
+  display: flex;
+  justify-content: center;
+}
 
-.text_shadow {
-  text-shadow: 2px 2px #000;
+.city_shield_box_width {
+  width: 100%;
+}
+
+.city_shield {
+  margin: 0 auto 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.iframe_flex {
+  display: flex;
+  justify-content: center;
+}
+
+.iframe_style {
+  width: 98%;
+  height: 8rem;
+  border-radius: 0.5rem;
+  border: 0.175rem solid #ffffff;
+  filter: invert(90%) hue-rotate(180deg);
 }
 
 .primary_text_colors {
