@@ -5,13 +5,14 @@
     rgba(185, 159, 92, 0.79) 100%
   );
 
+  --global-box-background-color: #d9d9d9;
   --global-text-color-primary: #cccccc;
   --global-text-color-secondary: #ff922e;
   --global-disruptor-color: #5ee122;
   --global-primary-font-family: red-hat-text-medium;
   --global-secondary-font-family: ravi-prakash;
   --global-secondary-font-family-one-glyph: yatra-one;
-  --global-font-size: 1em;
+  --global-font-size: 20px;
 }
 
 @font-face {
